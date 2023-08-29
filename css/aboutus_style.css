@@ -1,0 +1,221 @@
+body {
+  font-family: "Montserrat";
+}
+
+main .getintouch__contactus .getinrouch__body {
+  line-height: 1.25em;
+}
+.bkgimg__aboutus::before {
+  content: "";
+  opacity: 0.63;
+  position: absolute;
+  background-image: url("/img/big-logos/aboutus.jpeg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  font-size: 1.5vw;
+}
+main .aboutus__fullblock {
+  margin: 3vw 10vw;
+  color: white;
+  padding: 3vw;
+  background-color: #bb292c;
+}
+main .aboutus__fullblock .aboutus__block {
+  padding: 3vw 0;
+  border-bottom: 4px solid #222222;
+  border-top: 4px solid #222222;
+  display: grid;
+  gap: 3vw;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+main .aboutus__fullblock .aboutus__block .aboutus__imgblock {
+  width: 100%;
+  height: 21.8vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+main .aboutus__fullblock .aboutus__block .imgblock__1 {
+  background-image: url("/img/aboutus/1.jpeg");
+}
+main .aboutus__fullblock .aboutus__block .imgblock__2 {
+  background-image: url("/img/aboutus/2.jpg");
+}
+main .aboutus__fullblock .aboutus__block .imgblock__3 {
+  background-image: url("/img/aboutus/3.jpeg");
+}
+main .aboutus__fullblock .aboutus__block .aboutus__contentblock {
+  position: relative;
+}
+main .aboutus__fullblock .aboutus__block .aboutus__contentblock .aboutus__contenthead {
+  font-size: 1.8vw;
+  font-weight: 700;
+}
+main .aboutus__fullblock .aboutus__block .aboutus__contentblock .aboutus__contentbody {
+  position: relative;
+  line-height: 1.4em;
+  top: 40%;
+  transform: translateY(-50%);
+}
+main .customers__smallblock {
+  background-color: #bb292c;
+  margin: 4vw 10vw 3vw;
+  color: white;
+  text-align: center;
+  padding: 1.5vw 3vw 2.5vw;
+}
+main .customers__smallblock .smallblock__head {
+  position: relative;
+  font-weight: 700;
+  font-size: 1.8vw;
+  margin-bottom: 3vw;
+}
+main .customers__smallblock .smallblock__head::after {
+  content: "";
+  position: absolute;
+  top: 3vw;
+  left: 32.5%;
+  width: 35%;
+  height: 4px;
+  background-color: #222222;
+}
+main .customers__smallblock .smallblock__body {
+  line-height: 1.4em;
+}
+main .getintouch__contactus {
+  background-color: #222222;
+  padding: 2vw 33vw;
+  color: white;
+  text-align: center;
+}
+main .getintouch__contactus > * {
+  margin-bottom: 0.5vw;
+}
+main .getintouch__contactus .mailbox__bkgimg {
+  margin: 0 auto 1vw;
+  width: 5vw;
+  height: 5vw;
+  background-size: contain;
+  background-position: center center;
+  background-image: url("/img/mail-logo.png");
+  background-repeat: no-repeat;
+}
+main .getintouch__contactus .getinrouch__head {
+  font-weight: 700;
+  font-size: 1.6vw;
+}
+main .getintouch__contactus .getinrouch__body {
+  margin-bottom: 3.5vw;
+}
+main .getintouch__contactus .contact__button {
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  width: 14vw;
+  padding: 0.5vw 3.2vw;
+  border-radius: 1.6vw;
+  background-color: #bb292c;
+}
+main .getintouch__contactus .contact__button:hover {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding-right: 5vw;
+}
+main .getintouch__contactus .contact__button:hover > p::after {
+  content: "";
+  top: 50%;
+  background-image: url("/img/services/right-arrow.svg");
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 1vw;
+  height: 1vw;
+  left: 85%;
+  transform: translate(0, -50%);
+}
+
+.aboutblock--gridswap .aboutus__contentblock {
+  grid-row: 1;
+  grid-column: 1;
+  text-align: right;
+}
+.aboutblock--gridswap .aboutus__imgblock {
+  grid-row: 1;
+  grid-column: 2;
+}
+
+@media (max-width: 950px) {
+  .aboutblock--gridswap .aboutus__contentblock {
+    grid-row: 1;
+    grid-column: 1;
+    text-align: right;
+  }
+  .aboutblock--gridswap .aboutus__imgblock {
+    grid-row: 2;
+    grid-column: 1;
+  }
+  main {
+    font-size: 2.5vw;
+  }
+  main .aboutus__fullblock {
+    margin: 3vw 4vw;
+  }
+  main .aboutus__fullblock .aboutus__block {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0;
+  }
+  main .aboutus__fullblock .aboutus__block .aboutus__imgblock {
+    margin-bottom: 3vw;
+  }
+  main .aboutus__fullblock .aboutus__block .aboutus__contentblock {
+    text-align: center;
+  }
+  main .aboutus__fullblock .aboutus__block .aboutus__contentblock .aboutus__contentbody {
+    font-size: 2.5vw;
+  }
+  main .aboutus__fullblock .aboutus__block .aboutus__contentblock .aboutus__contenthead {
+    font-size: 4.5vw;
+  }
+  main .customers__smallblock {
+    margin-top: 10vw;
+    margin-left: 4vw;
+    margin-right: 4vw;
+  }
+  main .customers__smallblock .smallblock__head {
+    font-size: 4.5vw;
+  }
+  main .customers__smallblock .smallblock__head::after {
+    top: 5.5vw;
+    width: 50%;
+    left: 25%;
+  }
+  main .getintouch__contactus {
+    padding: 2vw 20vw;
+  }
+  main .getintouch__contactus .mailbox__bkgimg {
+    width: 15vw;
+    height: 15vw;
+  }
+  main .getintouch__contactus .getinrouch__head {
+    font-size: 4.5vw;
+    margin-bottom: 1vw;
+  }
+  main .getintouch__contactus .contact__button {
+    width: -moz-fit-content;
+    width: fit-content;
+    font-size: 3vw;
+    padding: 2vw 8vw;
+    border-radius: 4vw;
+  }
+}/*# sourceMappingURL=aboutus_style.css.map */

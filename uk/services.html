@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/zero.css">
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/services_style.css">
+        <title>ProQuality</title>
+    </head>
+    <body>         <header>
+        <nav class="navgrid">
+            <div class="navgrid__logo"></div>
+            <div class="navgrid__hrefElements">
+                <a href="index.html"><div class="navgrid__hrefElement--outsideLeft"><p>Головна</p></div></a>
+                <a href="services.html"><div class="navgrid__hrefElement--inside"><p>Послуги</p></div></a>
+                <a href="aboutus.html"><div class="navgrid__hrefElement--inside"><p>Про нас</p></div></a>
+                <a href="contactus.html"><div class="navgrid__hrefElement--outsideRight"><p>Зв'яжіться з нами</p></div></a>
+            </div>
+            <div class="navgrid__searchLang">
+                <div class="searchLang__searchbar"></div>
+                <div class="searchLang__langbar">
+                    <select name="lang" id="langOpt" onchange="redirectToSelectedLang(this)">
+                        <option value="EN">EN &#127482;&#127480;</option>
+                        <option value="UA" selected>UA &#127482;&#127462;</option>
+                    </select>
+                </div>
+            </div>
+            <div class="navgrid__formButtons">
+                <a href="applicate.html"><div class="form__button"><p>Стати водієм</p></div></a>
+                <a href="requestaquote.html"><div class="form__button"><p>Залишити заявку</p></div></a>
+            </div>
+            <div class="burgermenu__quickbutton" id="burgerbutton"></div>
+        </nav>
+
+    </header>
+    
+
+    
+    <div id="burgermenu" class="burgermenu" style="display: none;">
+        <div class="burgermenu__closebutton" id="closebutton"></div>
+
+        <div class="burgermenu__element">
+            <a href="index.html">Головна</a>
+        </div>
+        <div class="burgermenu__element">
+            <a href="services.html">Послуги</a>
+        </div>
+        <div class="burgermenu__element">
+            <a href="aboutus.html">Про нас</a>
+        </div>
+        <div class="burgermenu__element">
+            <a href="contactus.html">Зв'яжіться з нами</a>
+        </div>
+        <div class="burgermenu__element">
+            <select name="lang" id="langOpt_burg" onchange="redirectToSelectedLang(this)">
+                <option value="EN">EN &#127482;&#127480;</option>
+                <option value="UA" selected>UA &#127482;&#127462;</option>
+            </select>
+        </div>
+        <div class="burgermenu__element">
+            <div class="doublerow__grid">
+                <a href="applicate.html"><div class="form__button"><p>Стати водієм</p></div></a>
+                <a href="requestaquote.html"><div class="form__button"><p>Заявка</p></div></a>
+            </div>
+        </div>
+    </div>
+    <main>
+        <div class="services__preview">
+            <h1>Послуги</h1>
+        </div>
+        <div class="services__grid">
+            <div class="service__block serviceblock__grey" id="Nationwide_transportation">
+                <div class="serviceblock__head">
+                    <h3>ПЕРЕВЕЗЕННЯ ПО ВСІЙ КРАЇНІ</h3>
+                </div>
+                <div class="serviceblock__body">
+                    <div class="blockbody__text">
+                        <div class="serviceblock__paragraph">
+                            ProQuality Transportation надає професійні та надійні послуги з перевезення по всій Північній Америці. Ми задовольняємо потреби наших клієнтів завдяки нашому власному парку вантажівок та мережі надійних постачальників послуг.
+                        </div>
+                        <div class="serviceblock__paragraph">
+                            ProQuality Transportation обслуговує парк новеньких 124 рефрижераторних вантажівок, що обслуговуються досвідченими професійними водіями з багаторічним досвідом. Наших моторошніх партнерів ми обираємо з урахуванням високих вимог до безпеки та своєчасності доставки.
+                        </div>
+                    </div>
+                    <div class="blockbody__serviceimage bkgimg__nationwidetransportation"></div>
+                </div>
+                <div class="service__foottext">
+                    <div class="serviceblock__paragraph">
+                        Вимоги до цих перевізників включають:
+                        <ul>
+                            <li>Ліцензію брокера FMCSA</li>
+                            <li>Дотримання вимог TWIC</li>
+                            <li>Митне оформлення та документацію</li>
+                            <li>Сертифікацію на перевезення небезпечних вантажів</li>
+                            <li>Дотримання стандартів DOT</li>
+                        </ul>
+                    </div>
+                    <div class="serviceblock__paragraph">
+                        ProQuality Transportation досконало керує різними типами обладнання:
+                        <ul>
+                            <li>Повний контейнер</li>
+                            <li>Суховантажний фургон</li>
+                            <li>Рефрижератор</li>
+                            <li>LTL (вантаж неповної навантаженості)</li>
+                        </ul>
+                    </div>
+                    <div class="serviceblock__paragraph">
+                        Наш професійний підхід забезпечує точність, терміновість та дбайливе ставлення до вантажу будь-якого розміру. Ми розуміємо, що перевезення є важливим ланкою в ланцюжку поставок наших клієнтів і з великою увагою ставимося до нашої ключової ролі.
+                    </div>
+                </div>
+            </div>
+    
+            <div class="service__block serviceblock__white" id="warehouse_logistics">
+                <div class="serviceblock__head">
+                    <h3>ЛОГІСТИКА СКЛАДУ</h3>
+                </div>
+                <div class="serviceblock__body">
+                    <div class="blockbody__text">
+                        <div class="serviceblock__paragraph">
+                            ProQuality Transportation керує приблизно 125 000 кв. футів площі складу. Ми задовольняємо важливі потреби наших клієнтів завдяки нашим мережевим системам, які допомагають забезпечити необхідні рішення.
+                        </div>
+                        <div class="serviceblock__paragraph">
+                            Ми фокусуємося на технологіях, що гарантують нашу гнучкість та актуальність. Наш широкий спектр послуг з логістики включає:
+                        </div>
+                    </div>
+                    <div class="blockbody__serviceimage bkgimg__warehouselogistics"></div>
+                </div>
+                <div class="service__foottext">
+                    <div class="serviceblock__paragraph">
+                        <ul>
+                            <li>Маркування</li>
+                            <li>Перепаковка</li>
+                            <li>Завортування</li>
+                            <li>Комплектування</li>
+                            <li>Палетизація</li>
+                            <li>Упаковка</li>
+                            <li>Вибірка та упаковка</li>
+                            <li>Фізичний інвентар</li>
+                            <li>Підасемблювання</li>
+                        </ul>
+                    </div>
+                    <div class="serviceblock__paragraph">
+                        Крім того, ми можемо налаштувати спеціальні проекти за запитом наших клієнтів, оскільки наші рішення націлені на відповідність кожному окремому бізнесу. Якщо ви або ваша компанія хочете дізнатися більше про наші послуги та зацікавлені у співпраці, не соромтеся запитати про пропозицію.
+                    </div>
+                </div>
+            </div>
+    
+            <div class="service__block serviceblock__grey" id="cross_docking">
+                <div class="serviceblock__head">
+                    <h3>КРОС-ДОКІНГ</h3>
+                </div>
+                <div class="serviceblock__body serviceblock__body--gridswap">
+                    <div class="blockbody__text">
+                        <div class="serviceblock__paragraph">
+                            Крос-докінг - це логістична процедура вивантаження товарів і матеріалів від постачальника або виробника і безпосереднє завантаження їх в виїзні вантажівки або трейлери.
+                        </div>
+                        <div class="serviceblock__paragraph">
+                            ProQuality Transportation пропонує цю послугу нашим клієнтам для:
+                            <ul>
+                                <li>Оптимізації часу виробництва</li>
+                                <li>Зниження витрат</li>
+                                <li>Зменшення запасів</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="blockbody__serviceimage bkgimg__crossdocking">
+                    </div>
+                </div>
+                <div class="service__foottext">
+                    <div class="serviceblock__paragraph">
+                        Ми використовуємо найновіші технології інформаційних технологій, щоб надавати клієнтам змогу в реальному часі відстежувати статус відправки, а також отримувати всі записи про відвантаження.
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    </main>
+    
+        <footer>
+            <div class="footer__grid">
+                <div class="footer__infocontact">
+                    <div class="infocontact__head">
+                        <a href="https://www.instagram.com/proqualitytransportation"><div class="socialmedia__gridicon bkgimg__inst"></div></a>
+                        <a href="https://www.facebook.com/ProQualityTransportation"><div class="socialmedia__gridicon bkgimg__facebook"></div></a>
+                        <a href="https://ru.linkedin.com/company/proquality-transportation-logistics-llc"><div class="socialmedia__gridicon bkgimg__linkedin"></div></a>
+                        <a href="https://www.tiktok.com/tag/proquality"><div class="socialmedia__gridicon bkgimg__tiktok"></div></a>
+                        <a href="https://www.youtube.com/@proqualitytransportation5337"><div class="socialmedia__gridicon bkgimg__youtube"></div></a>
+                    </div>
+                    <div class="infocontact__foot">
+                        <div class="infocontact__privacy">
+                            <a href="/privacy.html"><div class="infocontact__hyperlink">Конфіденційність</div></a>
+                            <a href="/termsofuse.html"><div class="infocontact__hyperlink">Умови використання</div></a>
+                            <a href="/termsofservice.html"><div class="infocontact__hyperlink">Умови надання послуг</div></a>
+                        </div>
+                        <div class="infocontact__contacts">
+                            <div class="contacts__header">Наші контакти:</div>
+                            <a href="tel:+12063541763"><div class="contacts__hyperlink">+1 (206) 354-1763</div></a>
+                            <a href="fax:2534877097"><div class="contacts__hyperlink"><span style="font-weight: 700;">Факс:</span> 253-487-7097</div></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__centralgrid">
+                    <div class="centralgrid__locations">
+                        <div class="locations__head">Місця розташування:</div>
+                        <div class="locations__body">
+                            <a href="https://www.google.com/maps/place/3104+142nd+Ave+E+Suite+105,+Sumner,+WA+98390">3104 142nd Ave E Suite 105, Sumner, WA 98390</a>
+                            <a href="https://www.google.com/maps/place/403+N+Levee+Rd,+Puyallup,+WA+98371">403 N Levee Rd, Puyallup, WA 98371</a>
+                        </div>
+                    </div>
+                    <div class="centralgrid__navigation">
+                        <a href="services.html"><div class="navigation__griditem">Послуги</div></a>
+                        <a href="aboutus.html"><div class="navigation__griditem">Про нас</div></a>
+                        <a href="contactus.html"><div class="navigation__griditem">Зв'яжіться з нами</div></a>
+                    </div>
+                </div>
+                <div class="footer__formbuttons">
+                    <div class="application__button" onclick='redirect("applicate.html")'><p>Стати водієм</p></div>
+                    <div class="requestaquote__button" onclick='redirect("requestaquote.html")'><p>Залишити заявку</p></div>
+                </div>
+            </div>
+            <div class="footer__allrights">
+                <p>Авторське право © 2023 ProQuality Transportation & Logistics, LLC. Усі права захищені.</p>
+            </div>
+        </footer>     <script src="/js/burger.js"></script>
+    </body>
+</html>

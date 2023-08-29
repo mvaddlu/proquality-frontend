@@ -1,0 +1,79 @@
+body{
+    font-family: 'Montserrat';
+}
+
+.bkgimg__contactus{
+    &::before{
+        content: "";
+        opacity: 0.63;
+        position: absolute;
+        background-image: url("/img/contactus/contactus_preview.png");
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+main{
+    font-size: 1.4vw;
+    .contactus__actualcontainer{
+        margin: 0 15%;
+        >*{
+            margin-top: 9% !important;
+        }
+    }
+
+    .contactus__smallblock{
+        margin: 2vw 0;
+        .smallblock__body{
+            *{
+                color: white;
+            }
+            padding: 2.7vw 2.7vw 0;
+            border-radius: 2vw;
+            background-color: #bb292c;
+            >h4{
+                display: block;
+                padding-bottom: 2.7vw;
+            }
+        }
+    }
+
+    p{
+        >label{
+            font-weight: 700;
+        }
+        display: block;
+        margin-bottom: 1vw;
+    }
+
+    .smallblock__head{
+        text-align: center;
+        font-weight: 700;
+        margin-bottom: 1vw;
+        font-size: 2vw;
+    }
+
+    .smallblock__description{
+        text-align: center;
+        margin-bottom: 3vw;
+    }
+}
+
+@media (max-width:900px) {
+    main{
+        .contactus__actualcontainer{
+            margin: 0 5vw;
+        }
+        font-size: 3.4vw;
+
+        .smallblock__head{
+            font-size: 4.5vw;
+        }
+    }
+    
+}

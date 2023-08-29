@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/zero.css">
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/requestaquote_style.css">
+        <title>ProQuality</title>
+    </head>
+    <body>
+        <header>
+            <nav class="navgrid">
+                <div class="navgrid__logo"></div>
+                <div class="navgrid__hrefElements">
+                    <a href="/index.html"><div class="navgrid__hrefElement--outsideLeft"><p>Home</p></div></a>
+                    <a href="/services.html"><div class="navgrid__hrefElement--inside"><p>Services</p></div></a>
+                    <a href="/aboutus.html"><div class="navgrid__hrefElement--inside"><p>About us</p></div></a>
+                    <a href="/contactus.html"><div class="navgrid__hrefElement--outsideRight"><p>Contact us</p></div></a>
+                </div>
+                <div class="navgrid__searchLang">
+                    <div class="searchLang__searchbar"></div>
+                    <div class="searchLang__langbar">
+                        <select name="lang" id="langOpt" onchange="redirectToSelectedLang(this)">
+                            <option value="EN" selected>EN &#127482;&#127480;</option>
+                            <option value="UA">UA &#127482;&#127462;</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="navgrid__formButtons">
+                    <a href="/applicate.html"><div class="form__button"><p>Applicate</p></div></a>
+                    <a href="/requestaquote.html"><div class="form__button"><p>Request a Quote</p></div></a>
+                </div>
+                <div class="burgermenu__quickbutton" id="burgerbutton"></div>
+            </nav>
+
+        </header>
+        
+
+        
+        <div id="burgermenu" class="burgermenu" style="display: none;">
+            <div class="burgermenu__closebutton" id="closebutton"></div>
+
+            <div class="burgermenu__element">
+                <a href="/index.html">Home</a>
+            </div>
+            <div class="burgermenu__element">
+                <a href="/services.html">Services</a>
+            </div>
+            <div class="burgermenu__element">
+                <a href="/aboutus.html">About us</a>
+            </div>
+            <div class="burgermenu__element">
+                <a href="/contactus.html">Contact us</a>
+            </div>
+            <div class="burgermenu__element">
+                <select name="lang" id="langOpt_burg" onchange="redirectToSelectedLang(this)">
+                    <option value="EN" selected>EN &#127482;&#127480;</option>
+                    <option value="UA">UA &#127482;&#127462;</option>
+                </select>
+            </div>
+            <div class="burgermenu__element">
+                <div class="doublerow__grid">
+                    <a href="/applicate.html"><div class="form__button"><p>Applicate</p></div></a>
+                    <a href="/requestaquote.html"><div class="form__button"><p>Request a Quote</p></div></a>
+                </div>
+            </div>
+        </div>
+
+        
+        <main>
+            <div class="preview bkgimg__requestaquote">
+                <h1 style="top: 40%;">Request a Quote</h1>
+                <div class="captionblock__preview">
+                    Thank you for considering us for your shipment. Please fill out the form below with as many details as you can and we will get back to you as soon as possible.
+                </div>
+            </div>
+            <div class="paddingcontainer__requestaquote">
+                <div class="requestaquote__form">
+                    <form method="post" action="/mail.php" class="input__element input__element--quote">
+                        <label for="firstnameId">Full Name</label>
+                        <div class="doublerow__grid">
+                            <input required id="firstnameId" name="firstname" placeholder="Your First Name" type="text" />
+                            <input required id="lastnameId" name="lastname" placeholder="Your Last Name" type="text" />
+                        </div>
+                        <label for="emailId">Email</label>
+                        <input required id="emailId" name="email" placeholder="Your Email" type="text" />
+
+                        <label for="phoneId">Phone</label>
+                        <input required id="phoneId" name="phone" placeholder="Your Phone" type="text" />
+
+                        <label for="addressId">Address</label>
+                        <input required id="addressId" name="address" placeholder="Your Address" type="text" />
+
+                        <div class="triplerow__grid">
+                            <div>
+                                <label for="cityId">City</label>
+                                <input required id="cityId" name="city" placeholder="Your City" type="text" />
+                            </div>
+                            <div>
+                                <label for="stateId">State</label>
+                                <input required id="stateId" name="state" placeholder="Your State" type="text" />
+                            </div>
+                            <div>
+                                <label for="zipId">Zip</label>
+                                <input required id="zipId" name="zip" placeholder="Your Zip" type="text" />
+                            </div>
+                        </div>
+
+                        <label for="shipmentoriginId">Shipment Origin</label>
+                        <input required id="shipmentoriginId" name="shipmentorigin" placeholder="Your Shipment Origin" type="text" />
+
+                        <label for="shipmentdestinationId">Shipment Destination</label>
+                        <input required id="shipmentdestinationId" name="shipmentdestination" placeholder="Your Shipment Destination" type="text" />
+
+                        <label for="numberofplacesId">Number of Places / Pallets</label>
+                        <input required id="numberofplacesId" name="numberofplaces" placeholder="Your Number of Places / Pallets" type="text" />
+                        
+                        <label for="approxweightId">Approximate Weight</label>
+                        <input required id="approxweightId" name="approxweight" placeholder="Your Approximate Weight" type="text" />
+
+                        <label for="commentsId">Comments / Special Instructions</label>
+                        <textarea rows="5" id="commentsId" name="comments" placeholder="Your Comments / Special Instructions" type="text"></textarea>
+
+                        <button type="submit" class="submit__btn">
+                            Submit
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="footer__grid">
+                <div class="footer__infocontact">
+                    <div class="infocontact__head">
+                        <a href="https://www.instagram.com/proqualitytransportation"><div class="socialmedia__gridicon bkgimg__inst"></div></a>
+                        <a href="https://www.facebook.com/ProQualityTransportation"><div class="socialmedia__gridicon bkgimg__facebook"></div></a>
+                        <a href="https://ru.linkedin.com/company/proquality-transportation-logistics-llc"><div class="socialmedia__gridicon bkgimg__linkedin"></div></a>
+                        <a href="https://www.tiktok.com/tag/proquality"><div class="socialmedia__gridicon bkgimg__tiktok"></div></a>
+                        <a href="https://www.youtube.com/@proqualitytransportation5337"><div class="socialmedia__gridicon bkgimg__youtube"></div></a>
+                    </div>
+                    <div class="infocontact__foot">
+                        <div class="infocontact__privacy">
+                            <a href="/privacy.html"><div class="infocontact__hyperlink">Privacy</div></a>
+                            <a href="/termsofuse.html"><div class="infocontact__hyperlink">Terms of Use</div></a>
+                            <a href="/termsofservice.html"><div class="infocontact__hyperlink">Terms of Service</div></a>
+                        </div>
+                        <div class="infocontact__contacts">
+                            <div class="contacts__header">Our Contacts:</div>
+                            <a href="tel:+12063541763"><div class="contacts__hyperlink">+1 (206) 354-1763</div></a>
+                            <a href="fax:2534877097"><div class="contacts__hyperlink"><span style="font-weight: 700;">Fax:</span> 253-487-7097</div></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__centralgrid">
+                    <div class="centralgrid__locations">
+                        <div class="locations__head">Locations:</div>
+                        <div class="locations__body">
+                            <a href="https://www.google.com/maps/place/3104+142nd+Ave+E+Suite+105,+Sumner,+WA+98390">3104 142nd Ave E Suite 105, Sumner, WA 98390</a>
+                            <a href="https://www.google.com/maps/place/403+N+Levee+Rd,+Puyallup,+WA+98371">403 N Levee Rd, Puyallup, WA 98371</a>
+                        </div>
+                    </div>
+                    <div class="centralgrid__navigation">
+                        <a href="/services.html"><div class="navigation__griditem">Services</div></a>
+                        <a href="/aboutus.html"><div class="navigation__griditem">About us</div></a>
+                        <a href="/contactus.html"><div class="navigation__griditem">Contact us</div></a>
+                    </div>
+                </div>
+                <div class="footer__formbuttons">
+                    <div class="application__button" onclick='redirect("/applicate.html")'><p>Applicate</p></div>
+                    <div class="requestaquote__button" onclick='redirect("requestaquote.html")'><p>Request a Quote</p></div>
+                </div>
+            </div>
+            <div class="footer__allrights">
+                <p>Copyright © 2023 ProQuality Transportation & Logistics, LLC All Rights Reserved</p>
+            </div>
+        </footer>
+    </body>
+    <script src="/js/burger.js"></script>
+</html>

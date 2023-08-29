@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/zero.css">
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/requestaquote_style.css">
+        <title>ProQuality</title>
+    </head>
+    <body>         <header>
+        <nav class="navgrid">
+            <div class="navgrid__logo"></div>
+            <div class="navgrid__hrefElements">
+                <a href="index.html"><div class="navgrid__hrefElement--outsideLeft"><p>Головна</p></div></a>
+                <a href="services.html"><div class="navgrid__hrefElement--inside"><p>Послуги</p></div></a>
+                <a href="aboutus.html"><div class="navgrid__hrefElement--inside"><p>Про нас</p></div></a>
+                <a href="contactus.html"><div class="navgrid__hrefElement--outsideRight"><p>Зв'яжіться з нами</p></div></a>
+            </div>
+            <div class="navgrid__searchLang">
+                <div class="searchLang__searchbar"></div>
+                <div class="searchLang__langbar">
+                    <select name="lang" id="langOpt" onchange="redirectToSelectedLang(this)">
+                        <option value="EN">EN &#127482;&#127480;</option>
+                        <option value="UA" selected>UA &#127482;&#127462;</option>
+                    </select>
+                </div>
+            </div>
+            <div class="navgrid__formButtons">
+                <a href="applicate.html"><div class="form__button"><p>Стати водієм</p></div></a>
+                <a href="requestaquote.html"><div class="form__button"><p>Залишити заявку</p></div></a>
+            </div>
+            <div class="burgermenu__quickbutton" id="burgerbutton"></div>
+        </nav>
+
+    </header>
+    
+
+    
+    <div id="burgermenu" class="burgermenu" style="display: none;">
+        <div class="burgermenu__closebutton" id="closebutton"></div>
+
+        <div class="burgermenu__element">
+            <a href="index.html">Головна</a>
+        </div>
+        <div class="burgermenu__element">
+            <a href="services.html">Послуги</a>
+        </div>
+        <div class="burgermenu__element">
+            <a href="aboutus.html">Про нас</a>
+        </div>
+        <div class="burgermenu__element">
+            <a href="contactus.html">Зв'яжіться з нами</a>
+        </div>
+        <div class="burgermenu__element">
+            <select name="lang" id="langOpt_burg" onchange="redirectToSelectedLang(this)">
+                <option value="EN">EN &#127482;&#127480;</option>
+                <option value="UA" selected>UA &#127482;&#127462;</option>
+            </select>
+        </div>
+        <div class="burgermenu__element">
+            <div class="doublerow__grid">
+                <a href="applicate.html"><div class="form__button"><p>Стати водієм</p></div></a>
+                <a href="requestaquote.html"><div class="form__button"><p>Заявка</p></div></a>
+            </div>
+        </div>
+    </div>
+    <main>
+        <div class="preview bkgimg__requestaquote">
+            <h1 style="top: 40%;">Запит на Оцінку</h1>
+            <div class="captionblock__preview">
+                Дякуємо, що розглядаєте нас для вашої відправки. Будь ласка, заповніть форму нижче зі всіма можливими деталями, і ми зв'яжемося з вами якнайшвидше.
+            </div>
+        </div>
+        <div class="paddingcontainer__requestaquote">
+            <div class="requestaquote__form">
+                <form method="post" action="/mail.php" class="input__element input__element--quote">
+                    <label for="firstnameId">Повне Ім'я</label>
+                    <div class="doublerow__grid">
+                        <input required id="firstnameId" name="firstname" placeholder="Ваше Ім'я" type="text" />
+                        <input required id="lastnameId" name="lastname" placeholder="Ваше Прізвище" type="text" />
+                    </div>
+                    <label for="emailId">Електронна Пошта</label>
+                    <input required id="emailId" name="email" placeholder="Ваша Електронна Пошта" type="text" />
+    
+                    <label for="phoneId">Телефон</label>
+                    <input required id="phoneId" name="phone" placeholder="Ваш Телефон" type="text" />
+    
+                    <label for="addressId">Адреса</label>
+                    <input required id="addressId" name="address" placeholder="Ваша Адреса" type="text" />
+    
+                    <div class="triplerow__grid">
+                        <div>
+                            <label for="cityId">Місто</label>
+                            <input required id="cityId" name="city" placeholder="Ваше Місто" type="text" />
+                        </div>
+                        <div>
+                            <label for="stateId">Штат</label>
+                            <input required id="stateId" name="state" placeholder="Ваш Штат" type="text" />
+                        </div>
+                        <div>
+                            <label for="zipId">ЗІП Код</label>
+                            <input required id="zipId" name="zip" placeholder="Ваш ЗІП Код" type="text" />
+                        </div>
+                    </div>
+    
+                    <label for="shipmentoriginId">Початкове Місце Відправлення</label>
+                    <input required id="shipmentoriginId" name="shipmentorigin" placeholder="Ваше Початкове Місце Відправлення" type="text" />
+    
+                    <label for="shipmentdestinationId">Місце Призначення Відправлення</label>
+                    <input required id="shipmentdestinationId" name="shipmentdestination" placeholder="Ваше Місце Призначення Відправлення" type="text" />
+    
+                    <label for="numberofplacesId">Кількість Місць / Палет</label>
+                    <input required id="numberofplacesId" name="numberofplaces" placeholder="Ваша Кількість Місць / Палет" type="text" />
+    
+                    <label for="approxweightId">Приблизна Вага</label>
+                    <input required id="approxweightId" name="approxweight" placeholder="Ваша Приблизна Вага" type="text" />
+    
+                    <label for="commentsId">Коментарі / Спеціальні Інструкції</label>
+                    <textarea rows="5" id="commentsId" name="comments" placeholder="Ваші Коментарі / Спеціальні Інструкції" type="text"></textarea>
+    
+                    <button type="submit" class="submit__btn">
+                        Відправити
+                    </button>
+                </form>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="footer__grid">
+            <div class="footer__infocontact">
+                <div class="infocontact__head">
+                    <a href="https://www.instagram.com/proqualitytransportation"><div class="socialmedia__gridicon bkgimg__inst"></div></a>
+                    <a href="https://www.facebook.com/ProQualityTransportation"><div class="socialmedia__gridicon bkgimg__facebook"></div></a>
+                    <a href="https://ru.linkedin.com/company/proquality-transportation-logistics-llc"><div class="socialmedia__gridicon bkgimg__linkedin"></div></a>
+                    <a href="https://www.tiktok.com/tag/proquality"><div class="socialmedia__gridicon bkgimg__tiktok"></div></a>
+                    <a href="https://www.youtube.com/@proqualitytransportation5337"><div class="socialmedia__gridicon bkgimg__youtube"></div></a>
+                </div>
+                <div class="infocontact__foot">
+                    <div class="infocontact__privacy">
+                        <a href="/privacy.html"><div class="infocontact__hyperlink">Конфіденційність</div></a>
+                        <a href="/termsofuse.html"><div class="infocontact__hyperlink">Умови використання</div></a>
+                        <a href="/termsofservice.html"><div class="infocontact__hyperlink">Умови надання послуг</div></a>
+                    </div>
+                    <div class="infocontact__contacts">
+                        <div class="contacts__header">Наші контакти:</div>
+                        <a href="tel:+12063541763"><div class="contacts__hyperlink">+1 (206) 354-1763</div></a>
+                        <a href="fax:2534877097"><div class="contacts__hyperlink"><span style="font-weight: 700;">Факс:</span> 253-487-7097</div></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__centralgrid">
+                <div class="centralgrid__locations">
+                    <div class="locations__head">Місця розташування:</div>
+                    <div class="locations__body">
+                        <a href="https://www.google.com/maps/place/3104+142nd+Ave+E+Suite+105,+Sumner,+WA+98390">3104 142nd Ave E Suite 105, Sumner, WA 98390</a>
+                        <a href="https://www.google.com/maps/place/403+N+Levee+Rd,+Puyallup,+WA+98371">403 N Levee Rd, Puyallup, WA 98371</a>
+                    </div>
+                </div>
+                <div class="centralgrid__navigation">
+                    <a href="services.html"><div class="navigation__griditem">Послуги</div></a>
+                    <a href="aboutus.html"><div class="navigation__griditem">Про нас</div></a>
+                    <a href="contactus.html"><div class="navigation__griditem">Зв'яжіться з нами</div></a>
+                </div>
+            </div>
+            <div class="footer__formbuttons">
+                <div class="application__button" onclick='redirect("applicate.html")'><p>Стати водієм</p></div>
+                <div class="requestaquote__button" onclick='redirect("requestaquote.html")'><p>Залишити заявку</p></div>
+            </div>
+        </div>
+        <div class="footer__allrights">
+            <p>Авторське право © 2023 ProQuality Transportation & Logistics, LLC. Усі права захищені.</p>
+        </div>
+    </footer>
+    </body>
+    <script src="/js/burger.js"></script>
+</html>

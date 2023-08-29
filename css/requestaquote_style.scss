@@ -1,0 +1,53 @@
+body{
+    font-family: 'Montserrat';
+}
+
+.bkgimg__requestaquote{
+    &::before{
+        content: "";
+        opacity: 0.63;
+        position: absolute;
+        background-image: url("/img/big-logos/requestaquote.png");
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.paddingcontainer__requestaquote{
+    padding: 4vw;
+    background-color: #222222;
+
+    .requestaquote__form{
+        background-color: white;
+        border: 0.4vw solid #bb292c;
+        padding: 4vw 20%;
+    }
+
+    .input__element--quote{
+        label{
+            margin-bottom: 0.4vw;
+        }
+        >input{
+            margin-bottom: 2vw;
+        }
+        >div{
+            margin-bottom: 2vw;
+        }
+    }
+}
+
+@media (max-width:1000px) {
+    main{
+        .paddingcontainer__requestaquote{
+            .requestaquote__form{
+                padding: 4vw 5vw;
+            }
+        }
+    }
+    
+}

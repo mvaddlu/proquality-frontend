@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/zero.css">
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/services_style.css">
+        <title>ProQuality</title>
+    </head>
+    <body>
+        <header>
+            <nav class="navgrid">
+                <div class="navgrid__logo"></div>
+                <div class="navgrid__hrefElements">
+                    <a href="/index.html"><div class="navgrid__hrefElement--outsideLeft"><p>Home</p></div></a>
+                    <a href="/services.html"><div class="navgrid__hrefElement--inside"><p>Services</p></div></a>
+                    <a href="/aboutus.html"><div class="navgrid__hrefElement--inside"><p>About us</p></div></a>
+                    <a href="/contactus.html"><div class="navgrid__hrefElement--outsideRight"><p>Contact us</p></div></a>
+                </div>
+                <div class="navgrid__searchLang">
+                    <div class="searchLang__searchbar"></div>
+                    <div class="searchLang__langbar">
+                        <select name="lang" id="langOpt" onchange="redirectToSelectedLang(this)">
+                            <option value="EN" selected>EN &#127482;&#127480;</option>
+                            <option value="UA">UA &#127482;&#127462;</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="navgrid__formButtons">
+                    <a href="/applicate.html"><div class="form__button"><p>Applicate</p></div></a>
+                    <a href="/requestaquote.html"><div class="form__button"><p>Request a Quote</p></div></a>
+                </div>
+                <div class="burgermenu__quickbutton" id="burgerbutton"></div>
+            </nav>
+
+        </header>
+        
+
+        
+        <div id="burgermenu" class="burgermenu" style="display: none;">
+            <div class="burgermenu__closebutton" id="closebutton"></div>
+
+            <div class="burgermenu__element">
+                <a href="/index.html">Home</a>
+            </div>
+            <div class="burgermenu__element">
+                <a href="/services.html">Services</a>
+            </div>
+            <div class="burgermenu__element">
+                <a href="/aboutus.html">About us</a>
+            </div>
+            <div class="burgermenu__element">
+                <a href="/contactus.html">Contact us</a>
+            </div>
+            <div class="burgermenu__element">
+                <select name="lang" id="langOpt_burg" onchange="redirectToSelectedLang(this)">
+                    <option value="EN" selected>EN &#127482;&#127480;</option>
+                    <option value="UA">UA &#127482;&#127462;</option>
+                </select>
+            </div>
+            <div class="burgermenu__element">
+                <div class="doublerow__grid">
+                    <a href="/applicate.html"><div class="form__button"><p>Applicate</p></div></a>
+                    <a href="/requestaquote.html"><div class="form__button"><p>Request a Quote</p></div></a>
+                </div>
+            </div>
+        </div>
+
+        <main>
+            <div class="services__preview">
+                <h1>Services</h1>
+            </div>
+            <div class="services__grid">
+                <div class="service__block serviceblock__grey" id="Nationwide_transportation">
+                    <div class="serviceblock__head">
+                        <h3>NATIONWIDE TRANSPORTATION</h3>
+                    </div>
+                    <div class="serviceblock__body">
+                        <div class="blockbody__text">
+                            <div class="serviceblock__paragraph">
+                                ProQuality Transportation provides expert and reliable transportation services throughout North America. We are able to meet our customers’ needs via our own fleet of trucks and network of reliable service providers.
+                            </div>
+                            <div class="serviceblock__paragraph">
+                                ProQuality Transportation runs a fleet of brand new 124 reefer trucks operated by top professional drivers with years of experience. 
+                                Our brokerage side works with motor carriers who must meet our strict requirements for making safe and on-time deliveries
+                            </div>
+                        </div>
+                        <div class="blockbody__serviceimage bkgimg__nationwidetransportation"></div>
+                    </div>
+                    <div class="service__foottext">
+                        <div class="serviceblock__paragraph">
+                            Requirements for these carriers include:
+                            <ul>
+                                <li>FMCSA broker licensing</li>
+                                <li>TWIC compliance</li>
+                                <li>Customs bonding and documentation</li>
+                                <li>Hazmat certification</li>
+                                <li>DOT compliance</li>
+                            </ul>
+                        </div>
+                        <div class="serviceblock__paragraph">
+                            ProQuality Transportation expertly handles equipment types including:
+                            <ul>
+                                <li>Full Container</li>
+                                <li>Dry Van</li>
+                                <li>Reefer</li>
+                                <li>LTL</li>
+                            </ul>
+                        </div>
+                        <div class="serviceblock__paragraph">
+                            Our professional approach ensures that no matter the size of the cargo, it is handled with precision, urgency, and care. We understand that transportation is a significant link in our client’s supply chain process and we take great care in our essential role.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service__block serviceblock__white" id="warehouse_logistics">
+                    <div class="serviceblock__head">
+                        <h3>WAREHOUSE LOGISTICS</h3>
+                    </div>
+                    <div class="serviceblock__body">
+                        <div class="blockbody__text">
+                            <div class="serviceblock__paragraph">
+                                ProQuality Transportation manages roughly 125,000 sq. ft. of warehouse storage space. We keep up with the essential needs of our customers through our networked systems which help to provide essential solutions.
+                            </div>
+                            <div class="serviceblock__paragraph">
+                                We focus on technology which guarantees our ability to stay flexible and up-to-date, and our broad range of third-party logistics services includes:
+                            </div>
+                        </div>
+                        <div class="blockbody__serviceimage bkgimg__warehouselogistics"></div>
+                    </div>
+                    <div class="service__foottext">
+                        <div class="serviceblock__paragraph">
+                            <ul>
+                                <li>Labeling</li>
+                                <li>Reworking</li>
+                                <li>Wrapping</li>
+                                <li>Kitting</li>
+                                <li>Palletizing</li>
+                                <li>Packaging</li>
+                                <li>Picking and Packing</li>
+                                <li>Physical Inventory</li>
+                                <li>Sub-assembly</li>
+                            </ul>
+                        </div>
+                        <div class="serviceblock__paragraph">
+                            Additionally, we are able to customize special projects by request from our clients because our vital solutions are tailored to fit each individual business.<br />
+                            If you or your company want to hear more about our services and are interested in potentially working with us, don’t hesitate to request a quote.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service__block serviceblock__grey" id="cross_docking">
+                    <div class="serviceblock__head">
+                        <h3>CROSS DOCKING</h3>
+                    </div>
+                    <div class="serviceblock__body serviceblock__body--gridswap">
+                        <div class="blockbody__text">
+                            <div class="serviceblock__paragraph">
+                                Cross Docking is a logistics procedure of unloading products and materials from an incoming supplier or manufacturer and loading them directly into outgoing trucks or trailers.
+                            </div>
+                            <div class="serviceblock__paragraph">
+                                ProQuality Transportation offers this service for our clients to:
+                                <ul>
+                                    <li>Optimize production time</li>
+                                    <li>Cut costs</li>
+                                    <li>Reduce inventory</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="blockbody__serviceimage bkgimg__crossdocking">
+                        </div>
+                    </div>
+                    <div class="service__foottext">
+                        <div class="serviceblock__paragraph">
+                            We are utilizing the newest information technology available to allow our clients to monitor shipment status updates in real-time as well as all shipping activity records.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+        <footer>
+            <div class="footer__grid">
+                <div class="footer__infocontact">
+                    <div class="infocontact__head">
+                        <a href="https://www.instagram.com/proqualitytransportation"><div class="socialmedia__gridicon bkgimg__inst"></div></a>
+                        <a href="https://www.facebook.com/ProQualityTransportation"><div class="socialmedia__gridicon bkgimg__facebook"></div></a>
+                        <a href="https://ru.linkedin.com/company/proquality-transportation-logistics-llc"><div class="socialmedia__gridicon bkgimg__linkedin"></div></a>
+                        <a href="https://www.tiktok.com/tag/proquality"><div class="socialmedia__gridicon bkgimg__tiktok"></div></a>
+                        <a href="https://www.youtube.com/@proqualitytransportation5337"><div class="socialmedia__gridicon bkgimg__youtube"></div></a>
+                    </div>
+                    <div class="infocontact__foot">
+                        <div class="infocontact__privacy">
+                            <a href="/privacy.html"><div class="infocontact__hyperlink">Privacy</div></a>
+                            <a href="/termsofuse.html"><div class="infocontact__hyperlink">Terms of Use</div></a>
+                            <a href="/termsofservice.html"><div class="infocontact__hyperlink">Terms of Service</div></a>
+                        </div>
+                        <div class="infocontact__contacts">
+                            <div class="contacts__header">Our Contacts:</div>
+                            <a href="tel:+12063541763"><div class="contacts__hyperlink">+1 (206) 354-1763</div></a>
+                            <a href="fax:2534877097"><div class="contacts__hyperlink"><span style="font-weight: 700;">Fax:</span> 253-487-7097</div></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__centralgrid">
+                    <div class="centralgrid__locations">
+                        <div class="locations__head">Locations:</div>
+                        <div class="locations__body">
+                            <a href="https://www.google.com/maps/place/3104+142nd+Ave+E+Suite+105,+Sumner,+WA+98390">3104 142nd Ave E Suite 105, Sumner, WA 98390</a>
+                            <a href="https://www.google.com/maps/place/403+N+Levee+Rd,+Puyallup,+WA+98371">403 N Levee Rd, Puyallup, WA 98371</a>
+                        </div>
+                    </div>
+                    <div class="centralgrid__navigation">
+                        <a href="/services.html"><div class="navigation__griditem">Services</div></a>
+                        <a href="/aboutus.html"><div class="navigation__griditem">About us</div></a>
+                        <a href="/contactus.html"><div class="navigation__griditem">Contact us</div></a>
+                    </div>
+                </div>
+                <div class="footer__formbuttons">
+                    <div class="application__button" onclick='redirect("/applicate.html")'><p>Applicate</p></div>
+                    <div class="requestaquote__button" onclick='redirect("requestaquote.html")'><p>Request a Quote</p></div>
+                </div>
+            </div>
+            <div class="footer__allrights">
+                <p>Copyright © 2023 ProQuality Transportation & Logistics, LLC All Rights Reserved</p>
+            </div>
+        </footer>
+        <script src="/js/burger.js"></script>
+    </body>
+</html>
